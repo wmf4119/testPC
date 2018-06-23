@@ -1,0 +1,45 @@
+.logo_car{margin: 10px;}
+i{font-style: normal;}
+.contacter{width: 990px;margin: 0 auto;}
+.step{width: 479px;height: 70px;float: right;}
+.cart_com{border: 1px solid #ddd;background: #f3f3f3 url(../img/cart-empty-bg.png) no-repeat;height: 70px;padding-top: 30px;background-position:240px 20px;padding-left: 340px;}
+.cart_com p{font: 12px/1.5 "微软雅黑";color: #666;}
+.cart_com p a{color: #EE3E1B;}
+.contacter h2{font:20px/1.5 "微软雅黑";color: #333;}
+.shangpintuijian h3{font: 14px/45px "微软雅黑";color: #666;height:45px;}
+.shangpintuijian ul li{float: left;width: 180px;height: 220px;border: 1px solid #f1f1f1;text-align: center;}
+.shangpintuijian ul li a{font: 14px/1.5 "微软雅黑";color: #666;}
+.shangpintuijian ul li+li{margin-left:5px ;margin-top: 5px;}
+.shangpintuijian ul li img{height: 180px;}
+
+.haveCar{border: 1px solid #DDDDDD;border-top: 2px solid #B8C1C8;margin-top: 10px;}
+.haveCar table{width: 988px;color: #666; border-collapse:collapse;}
+.haveCar table button{color: #666;}
+.des,.inc{width: 15px;height: 15px;margin:0 5px}
+.haveCar table td{padding-left:20px;}
+.haveCar thead{background:#EFF2F5;}
+.haveCar thead td{height: 35px;}
+.haveCar tfoot{background:#EFF2F5;border-top: 2px #ddd solid;}
+.haveCar tfoot td{height: 48px;}
+.allSelected{width: 80px;}
+.car_goodDetail{width: 520px;text-align: center;}
+.car_goodPrice{width: 130px;text-align: center;}
+.car_goodNum{width: 135px;text-align: center;}
+.car_pos{width: 102px;text-align: center;}
+.shop{height: 54px;border-bottom: 1px solid #ddd;}
+.haveCar input{border: 0;}
+
+.good{height: 82px;text-align: center;}
+#seleGood{float: left;margin-top: 15px;}
+.good dl dt{float: left;border:1px solid #ccc ;margin:0 15px}
+.good dl dd{float: left;text-align: left;}
+.good dl dd p{margin-bottom: 25px;}
+.good dl dd i{font-style: normal;color: #999;}
+#goodNum{width: 34px;height: 20px;border:1px solid #ccc ;text-align: center;}
+.goodNum_pos button{border: 1px solid #ccc ;}
+tfoot td p{float:left;margin-top:10px ;}
+tfoot td div{float: right;margin:0 10px;}
+#account{width: 120px;height: 36px;border-radius: 3px;background: #FF4D50;color: #fff;font: 16px/1 "微软雅黑";}
+tfoot td div span{display:inline-block;margin-right: 10px;}
+.totalNum{color: #E4393C;margin:0 5px;font-weight: normal;}
+.totalPrice{font: 20px/1 "微软雅黑";color: #E3393C;}

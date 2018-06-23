@@ -1,0 +1,11 @@
+.layout{width: 1190px;margin: 0 auto;overflow: hidden;}
+.h_l #goLogin{float: right;height: 31px;display: block;}
+
+.main{width: 80%;margin:0 auto;height: 900px;}
+.tab_l{width: 20%;height:100%;float: left;background: #F5F4F4;}
+.tab_l li{cursor:pointer;height: 40px; text-align: center; font-size:14px ;line-height: 40px;border-bottom:1px solid #F5e8F4 ;}
+.tab_l li.first{margin-top: 30px;border-top: 1px solid #F5e8F4;}
+
+.main div{float: right;width: 80%;margin-top: 30px;}
+.goodTab {width: 100%;font-size: 16px;}
+.goodTab tr,th{height: 30px;}

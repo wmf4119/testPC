@@ -1,0 +1,131 @@
+.layout{width: 1190px; margin: 0 auto;overflow: hidden;}
+#BorderL0{border-left: 0;}
+#MarginL0{margin-left: 0;}
+.header{height: 31px;background: #F5F4F4;border-bottom: 1px solid #E6E6E6;color: #7F7F7A;font:12px/31px "微软雅黑";}
+/*.h_l为头部的左边*/
+.h_l{width:400px;height: 32px;float:left;}
+	.h_l em{padding: 0 10px;}
+	.h_l #goLogin{float: right;height: 31px;display: none;}
+		.h_l a{display: inline-block;padding: 0 12px;color: #7F7F7A;}
+		#loginInfo{float: right;height: 31px;}
+/*头部右边*/
+.h_r{float:left;margin-left:18%;height:31px;width: 47%;}
+	.h_r li{float: left;}
+	.h_r .myZJ{background: url(../../img/jiantou.jpg) no-repeat right center;padding-right: 22px;}
+	.layout .myZJ:hover{cursor:pointer;}
+	.h_r .gouwuche{background: url(../../img/gouwuche.png) no-repeat left center;padding-left: 20px;margin-left: 10px;cursor: pointer;}
+	.h_r .gouwuche span{display: inline-block;padding: 0 8px;color:#494E52;}
+	.h_r a{display: inline-block;color: #7F7F7A;padding: 0 10px;}
+	.h_r .sellerCenter{background: url(../../img/jiantou.jpg) no-repeat right center; padding-right: 12px;}
+	.layout .sellerCenter:hover{cursor:pointer;}
+	/*下拉菜单*/
+	.haveSubM>a:hover{background:#fff ;}
+	.haveSubM>a.myZJ:hover,.haveSubM>a.sellerCenter:hover{background:#fff url(../../img/jiantou.jpg) no-repeat right center;}
+	#dropdown-menu{z-index:10;position:absolute;display: none;background: #fff;}
+	#dropdown-menu li{float: none;}
+/*图标向上旋转*/
+.hover-up{transition-duration:.5s;transform:rotate(180deg);-webkit-transform:rotate(180deg); }
+/*图标向下旋转*/
+.hover-down{transition-duration:.5s;transform:rotate(0);-webkit-transform:rotate(0)}
+
+/*logo和搜索框*/
+.search_bar{margin:27px 0 20px 0}
+	.logo{float:left;margin-right: 105px;margin:20px 100px 28px 0}
+	.search{width:581px;height: 70px;float: left;}
+	.search-form{display: inline-block;border: 2px solid #DD0207;width:581px; height: 34px;line-height: 34px;margin:20px 170px 5px 0;position: relative;}
+	/*商品店铺切换*/
+	.search-form label{color: #484E52;display: inline-block; width:58px;height:34px;text-align: center;background: url(../../img/jiantou.jpg) no-repeat right center;padding-right:12px;}
+	.search-form ul{position: absolute;background: #fff;padding:0 27px 0 16px;height:66px;z-index: 2;border: 1px solid #7F7F7A;}
+	.search-form ul li:hover {color: #DD0207;cursor: pointer;}
+	/*文本框*/
+	#searchBox{display: inline-block;width:437px; height: 31px;border: 0;}
+	/*搜索按钮*/
+	.button{float:right;width:70px; height: 36px;background: #DD0207;border:0;color: #fff;font-size: 18px;}
+	/*热门搜索*/
+	.hot-search{display: inline-block;width:588px;}
+	.hot-search a{color: #7F7F7A;}
+	.hot-search a.hot{color:#DD0207;}
+	.img_a{float:left;margin-left: 140px;}
+
+/*banner部分*/
+/*全部商品分类*/
+.banner{position:relative;height:530px;}
+.banner_nav{padding: 11px 50px 11px 14px;position:relative;height:15px;overflow: visible;}
+	.all{width:136px;height:15px;position: absolute;left:0;top: 2px;z-index: 10;background: #DD0207;padding: 11px 50px 11px 14px;}
+	.all a{ display:inline-block;color: #fff;font: 16px/15px "微软雅黑";height: 15px;padding-left: 25px;background: #DD0207 url(../../img/all_fenlei.png) no-repeat left center;}
+	/*导航条*/
+	.nav{width: 990px;height: 30px;position: absolute;right: 0;top: 0;}
+	.nav li{float: left;}
+	.nav li a{display: block;padding: 0 40px; height: 30px;font: 16px/30px "微软雅黑";color: #373A40;}
+	.nav li a:hover{color: #F00F34;}
+	.nav li a.c1{color: #F00F34;}
+	
+	/*联动菜单*/
+	.secondNav{width: 200px;height: 490px;background: #3D4851;color:#EBECED ;position:absolute;z-index:10;}
+	.secondNav li{width: 181px;height: 50px;padding:24px 0 7px 19px;}
+	.secondNav li+li{border-top:1px solid #323B42;}
+	.secondNav li>div{width: 181px;height:23px;margin-bottom: 10px;}
+	.secondNav li a{color:#EBECED ;font:14px/1.5 "微软雅黑";}
+	.secondNav li>div a{display:block;padding-left:15px;width: 181px;height:23px;font:bold 14px/23px "微软雅黑";}
+	.secondNav li:hover{background: #333C43;}
+	/*白框*/
+	.secondNav li>a.bg1{background:#EBECED;color:#323C43;border-radius: 1px;}
+	/*二级菜单*/
+	.secondNav li .pop{width: 750px;height: 490px;display: none;position: absolute;left: 200px;top: 0;z-index:99;padding-left:30px;background: #fff;}
+	.secondNav li .pop>dl{float:left;width:540px;height:490px;}
+	.secondNav li .pop>dl dt{color:#313131;font: bolder 14px/51px "微软雅黑";height: 51px;border-bottom: 1px solid black;width: 540px;float: left;}
+	.secondNav li .pop>dl dd{float: left;}
+	.secondNav li .pop>dl dd a{float:left;width: 80px;height: 25px;color: #666;font:12px/25px "微软雅黑";}
+	/*推荐品牌*/
+	.secondNav li .pop dl.tuijian{float:right;width:180px;height:490px;background: #F7F7F7;}
+	.secondNav li .pop dl.tuijian img{width: 160px;height: 210px;display: block;padding:0 10px;}
+	.secondNav li .pop dl.tuijian dt{width:180px;border: 0;font:normal 14px/25px "微软雅黑";height: 25px;text-align:center;}
+	.secondNav li .pop.active{display: block;}
+	/*各个li的背景图*/
+	.secondNav li #first a{background:url(../../img/baijiu.png) no-repeat left center;}
+	.secondNav li:hover #first a{background:url(../../img/baijiu2.png) no-repeat left center;}
+	.secondNav li #two a{background:url(../../img/putaojiu.png) no-repeat left center;}
+	.secondNav li:hover #two a{background:url(../../img/putaojiu2.png) no-repeat left center;}
+	.secondNav li #three a{background:url(../../img/yangjiu.png) no-repeat left center;}
+	.secondNav li:hover #three a{background:url(../../img/yangjiu2.png) no-repeat left center;}
+	.secondNav li #four a{background:url(../../img/huangjiu.png) no-repeat left center;}
+	.secondNav li:hover #four a{background:url(../../img/huangjiu2.png) no-repeat left center;}
+	.secondNav li #five a{background:url(../../img/lihe.png) no-repeat left center;}
+	.secondNav li:hover #five a{background:url(../../img/lihe2.png) no-repeat left center;}
+	.secondNav li #six a{background:url(../../img/hunqing.png) no-repeat left center;}
+	.secondNav li:hover #six a{background:url(../../img/hunqing2.png) no-repeat left center;}
+
+/*//底部*/
+.footer{height: 450px;}
+.ensure{background: #F8F8F8;height: 108px;border-bottom: 1px solid #D6D6D6;}
+.ensure dl{float: left;margin-right: 35px;margin-top: 35px;}
+.ensure dl dt{float: left;margin-right: 20px;}
+.ensure dl dd{float: left;}
+.ensure dl dd h3{font: 16px/1.5 "微软雅黑";color: #313131;}
+.ensure dl dd p{font: 12px/1.5 "微软雅黑";color: #7C7C66;}
+
+.foot_service{background: #F3F3F3;height: 155px;padding-top:35px ;overflow: hidden;}
+.fleft{float: left;}
+.fleft div{width: 130px;height: 45px;}
+.zj{background:url(../../img/foot/zj2.png) no-repeat left top;}
+.ls{background:url(../../img/foot/ls.png) no-repeat left top;}
+.yt{background:url(../../img/foot/yt.png) no-repeat left top;}
+.fleft div.zj:hover{background:url(../../img/foot/zj1.png) no-repeat left top;}
+.fleft div.ls:hover{background:url(../../img/foot/ls2.png) no-repeat left top;}
+.fleft div.yt:hover{background:url(../../img/foot/yt2.png) no-repeat left top;}
+.foot_service ul{float: left;margin-left: 67px;} 
+.foot_service ul h3{color:#313131;font:bold 15px/1 '微软雅黑';height: 30px;}
+.foot_service ul li{height: 25px;}
+.foot_service ul li a{color: #666666;font: 12px/1.5 "微软雅黑";}
+.foot_service ul li a:hover{color: #E3393C;}
+.foot_service div.qr{width: 100px;float:right;text-align: center;margin-right: 10px;}
+.foot_service div.qr h2{font:bold 15px/1.5 "微软雅黑"; color: #313131;}
+.foot_service div.qr p{color: #666666;font: 12px/1.5 "微软雅黑";}
+
+.foot_nav{background: #313131;height: 39px;}
+.foot_nav ul{height: 39px;margin-left: 25%;}
+.foot_nav ul li{float: left;width: 80px;height: 39px;margin-top:12px;}
+.foot_nav ul li a{display: block;height:13px;font: 13px/13px "微软雅黑";color: #fff;text-align: center;}
+.foot_nav ul li+li a{border-left: 1px #fff solid;}
+.foot_web{height: 110px;text-align: center;}
+.foot_web p{width: 100%;height: 50px;font: 12px/50px "微软雅黑";color: #666;}

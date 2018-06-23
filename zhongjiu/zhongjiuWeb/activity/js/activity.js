@@ -1,0 +1,13 @@
+$(function(){
+	$('.all').hover(function(){
+		$('.secondNav').addClass('active');
+	},function(){
+		$('.secondNav').hover(function(){
+			$('.secondNav').addClass('active');
+		},function(){
+			$('.secondNav').removeClass('active');
+			return;
+		});
+		$('.secondNav').removeClass('active');
+	});
+});

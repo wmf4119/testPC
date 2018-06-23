@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>中酒网</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="common/css/cbl.css"/>
+		<script src="common/js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="common/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/top.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cbl.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部开始-->
+		<div class="header">
+			<div class="layout">
+				<!--头部左边-->
+				<div class="h_l">
+					<span>您好，欢迎来到<em style="color: #3E3A39;">中酒网！</em></span>
+					<a href="javascript:;" style="color: #E3393C;">去买家中心</a>
+					<div id="loginInfo">
+						<span id="username"></span>
+						<a href="javascript:;" id="logout">[退出]</a>
+					</div>
+					<div id="goLogin">
+						<a href="login/login.html">请登录</a>|<a href="register/register.html">免费注册</a>
+					</div>
+				</div>
+				<!--头部右边-->
+				<ul class="h_r">
+					<li class="haveSubM">
+						<span class="outline"></span>
+						<span class="blank"></span>
+						<a class="myZJ">我的中酒网</a>
+						<div id="dropdown-menu">
+						  <ol>
+							<li>
+						      <a href="">已买到的商品</a>
+						    </li>
+						    <li>
+						      <a href="">我关注的商品</a>
+						    </li>
+						    <li>
+						      <a href="">我关注的店铺</a>
+						    </li>
+						  </ol>
+						</div>
+					</li>
+					<li>
+						<a class="gouwuche">购物车<span class="cart_num">0</span>件</a>
+					</li>
+					<li class="haveSubM">
+						<a href="javascript:;">微信端</a>
+						<div id="dropdown-menu" class="dmenu">
+						  <img src="img/qrCode.png" height="90" width="90">
+						</div>
+					</li>
+					<li class="haveSubM">
+						<a href="javascript:;">APP</a>
+						<div id="dropdown-menu" class="dmenu">
+						  <img src="img/app.gif" height="90" width="90">
+						  <h3>扫描二维码</h3>
+						  <p> 下载手机客户端 </p>
+						</div>
+					</li>
+					<li class="haveSubM">
+						<a class="sellerCenter">卖家中心</a>
+						<div id="dropdown-menu" class="dmenu">
+						  <ol>
+						    <li>
+						      <a href="javascript:;">商家入驻</a>
+						    </li>
+						    <li>
+						      <a href="javascript:;">已卖出商品</a>
+						    </li>
+						    <li>
+						      <a href="javascript:;">发布商品</a>
+						    </li>
+						    <li>
+						      <a href="javascript:;">管理商品</a>
+						    </li>
+						  </ol>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">订购热线：400-798-9999</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--头部结束-->
+		<!--侧边栏开始-->
+		<div class="mui-mbar-tabs">
+			<div class="quick_link_mian">
+				<div class="quick_links_panel">
+					<div id="quick_links" class="quick_links">
+						<li>
+							<a href="#" class="my_qlinks"><i class="setting"></i></a>
+							<div class="mp_tooltip" style="visibility:hidden;">个人中心<i class="icon_arrow_right_black"></i></div>
+						</li>
+						<li id="shopCart">
+							<a href="#" class="message_list" ><i class="message"></i><div class="span">购物车</div><span class="cart_num">0</span></a>
+						</li>
+						<li>
+							<a href="#" class="history_list"><i class="view"></i></a>
+							<div class="mp_tooltip" style="visibility:hidden;">我的资产<i class="icon_arrow_right_black"></i></div>
+						</li>
+						<li>
+							<a href="#" class="mpbtn_wdsc"><i class="wdsc"></i></a>
+							<div class="mp_tooltip">关注商品<i class="icon_arrow_right_black"></i></div>
+						</li>
+						<li>
+							<a href="#" class="mpbtn_histroy"><i class="zuji"></i></a>
+							<div class="mp_tooltip">浏览历史<i class="icon_arrow_right_black"></i></div>
+						</li>
+					</div>
+					<div class="quick_toggle">
+						<li><a href="#top" class="return_top"><i class="top"></i></a>
+							<div class="mp_tooltip">返回顶部<i class="icon_arrow_right_black"></i></div>
+						</li>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--侧边栏结束-->
+		<!--logo和搜索框开始-->
+		<div class="layout">
+			<div class="search_bar">
+				<div class="logo"><img src="img/logo.png" alt="" /></div>
+				<div class="search">
+					<div class="search-form">
+						<ul style="display: none;">
+						  <li> 商品</li>
+						  <li> 店铺</li>
+						</ul>
+						<label>商品</label>
+						<input id="searchBox" class="text" name="" value="" placeholder="茅台" type="text">
+						<input id="searchBtn" class="button" value="搜索" type="button">
+					</div>
+					<div class="hot-search">
+					  <a href="javascript:;" class="hot">五粮液</a>
+					  <a href="javascript:;">汾酒</a>
+					  <a href="javascript:;">剑南春</a>
+					  <a href="javascript:;">泸州老窖</a>
+					  <a href="detail/detail.html">卡萨玛利亚干红葡萄酒</a>
+					</div>
+				</div>
+				<div class="img_a">
+					<a href="javascript:;"><img src="img/201610211352319102520.png"/></a>
+				</div>
+			</div>
+		</div>
+		<!--logo和搜索框结束-->
+		<!--banner开始-->
+		<div class="banner">
+			<div class="layout">
+				<div class="banner_nav">
+					<div class="all">
+						<a href="#">全部商品分类</a>
+					</div>
+					<ul class="nav">
+						<li><a href="javascript:;" class="c1">首页</a></li>
+						<li><a href="activity/activity.html">天佑德专场</a></li>
+						<li><a href="javascript:;">白酒会场</a></li>
+						<li><a href="javascript:;">红酒会场</a></li>
+						<li><a href="javascript:;">会员中心</a></li>
+						<li><a href="javascript:;">重要公告</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="layout">
+				<ul class="secondNav">
+					<li>
+						<div id="first"><a href="#"><i>&nbsp;</i>白酒</a></div>
+						<a href="#">茅台</a>
+						<a href="#" class="bg1">天佑德</a>
+						<a href="#">五粮液</a>
+						<div class="pop">
+							<dl>
+	  							<dt>品牌</dt>
+								<dd class="clearfix">
+								      <a href="#">剑南春</a>
+									  <a href="#">泸州老窖</a>
+									  <a href="#">洋河</a>
+									  <a href="#">汾酒</a>
+									  <a href="#">小糊涂仙</a>
+									  <a href="#">郎酒</a>
+									  <a href="#">杜康</a>
+									  <a href="#">古井</a> 
+									  <a href="#">衡水老白干</a>
+									  <a href="#">孔府家</a> 
+									  <a  href="#">西凤</a>
+									  <a href="#">国台</a>
+									  <a  href="#">牛栏山</a>
+								</dd>
+							    <dt>香型</dt>
+							    <dd class="clearfix">
+							      <a href="#">酱香型</a>
+							      <a href="#">浓香型</a> 
+							      <a href="#">绵柔型</a>
+							      <a href="#">清香型</a>
+							      <a href="#">特香型</a>
+							      <a href="#">董香型</a>
+							      <a href="#">凤香型</a>
+							    </dd>
+							    <dt>产地</dt>
+							    <dd class="clearfix">
+							      <a href="#">贵州</a>
+							      <a href="#">江西</a>
+							      <a href="#">四川</a>
+							      <a href="#">江苏</a>
+							      <a href="#">山西</a>
+							      <a href="#">内蒙</a>
+							      <a href="#">河南</a>
+							      <a href="#">青海</a>
+								</dd>
+							</dl>	
+							<dl class="tuijian">
+								<dt>推荐品牌</dt>
+								<dd><img src="img/201610241005384628460.jpg" alt="" /></dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+						<div id="two"><a href="#"><i>&nbsp;</i>葡萄酒</a></div>
+						<a href="#" class="bg1">拉菲</a>
+						<a href="#">马克斯威</a>
+						<a href="#">黄尾袋鼠</a>
+						<div class="pop">
+							<dl>
+	  							<dt>品牌</dt>
+								<dd class="clearfix">
+								      <a href="#">佩西</a>
+									  <a href="#">张裕</a>
+									  <a href="#">乐船</a>
+									  <a href="#">小龙船</a>
+									  <a href="#">圣迪斯</a>
+									  <a href="#">奔富</a>
+									  <a href="#">美圣世家</a>
+									  <a href="#">康迪</a> 
+									  <a href="#">特拉托</a>
+								</dd>
+							    <dt>品种</dt>
+							    <dd class="clearfix">
+							      <a href="#">干红葡萄酒</a>
+							      <a href="#">干白葡萄酒</a> 
+							      <a href="#">气泡/香槟</a>
+							      <a href="#">冰酒</a>
+							      <a href="#">果酒</a>
+							      <a href="#">甜桃红</a>
+							      <a href="#">甜白</a>
+							    </dd>
+							    <dt>产区</dt>
+							    <dd class="clearfix">
+							      <a href="#" >法国</a>
+							      <a href="#">西班牙</a>
+							      <a href="#">智利</a>
+							      <a href="#">阿根廷</a>
+							      <a href="#">澳大利亚</a>
+							      <a href="#">南非</a>
+							      <a href="#">中国</a>
+							      <a href="#">美国</a>
+								</dd>
+							</dl>	
+							<dl class="tuijian">
+								<dt>推荐品牌</dt>
+								<dd></dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+						<div id="three"><a href="#"><i>&nbsp;</i>洋酒</a></div>
+						<a href="#" class="bg1">马爹利</a>
+						<a href="#">人头马</a>
+						<a href="#">芝华士</a>
+						<div class="pop">
+							<dl>
+	  							<dt>品牌</dt>
+								<dd class="clearfix">
+								      <a href="#">皇家贝斯</a>
+									  <a href="#">兄弟</a>
+									  <a href="#">深蓝</a>
+									  <a href="#">百利甜</a>
+									  <a href="#">绝对伏特加</a>
+									  <a href="#">杰克丹尼</a>
+									  <a href="#">百龄坛</a>
+									  <a href="#">百加得</a> 
+									  <a href="#">尊尼获加</a>
+									  <a href="#">叶卡</a> 
+									  <a  href="#">轩尼诗</a>
+									  <a href="#">皇家礼炮</a>
+									  <a  href="#">摩根船长</a>
+								</dd>
+							    <dt>品种</dt>
+							    <dd class="clearfix">
+							      <a href="#">聚会用酒</a>
+							      <a href="#">商务用酒</a> 
+							    </dd>
+							    <dt>产地</dt>
+							    <dd class="clearfix">
+							      <a href="#">中国</a>
+							      <a href="#">法国</a>
+							      <a href="#">英国</a>
+							      <a href="#">美国</a>
+								</dd>
+							</dl>	
+							<dl class="tuijian">
+								<dt>推荐品牌</dt>
+								<dd></dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+						<div id="four"><a href="#"><i>&nbsp;</i>黄酒</a></div>
+						<a href="#">女儿红</a>
+						<a href="#" class="bg1">劲酒</a>
+						<a href="#">尧喝货</a>
+						<div class="pop">
+							<dl>
+	  							<dt>品牌</dt>
+								<dd class="clearfix">
+								      <a href="#">塔牌</a>
+									  <a href="#">古越龙山</a>
+									  <a href="#">石库门</a>
+									  <a href="#">会稽山</a>
+									  <a href="#">唐宋</a>
+								</dd>
+							    <dt>品种</dt>
+							    <dd class="clearfix">
+							      <a href="#" >聚会用酒</a>
+							      <a href="#">礼节拜访</a>
+							      <a href="#">婚庆用酒</a>
+								</dd>
+							</dl>	
+							<dl class="tuijian">
+								<dt>推荐品牌</dt>
+								<dd></dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+						<div id="five"><a href="#"><i>&nbsp;</i>礼盒专区</a></div>
+						<a href="#" class="bg1">国台好礼</a>
+						<a href="#">成龙祥凤</a>
+						<div class="pop">
+							<dl>
+	  							<dt>品牌</dt>
+								<dd class="clearfix">
+									 <a href="#">礼盒</a>
+									  <a href="#">五粮液</a>
+									  <a href="#">汾酒</a>
+									  <a href="#">茅台</a>
+									   <a href="#">剑南春</a>
+									  <a href="#">张裕</a>
+									  <a href="#">拉菲</a>
+								</dd>
+							    <dt>类型</dt>
+							    <dd class="clearfix">
+							      <a href="#">酱香型</a>
+							      <a href="#">浓香型</a> 
+							      <a href="#">干红葡萄酒</a>
+							      <a href="#">干白葡萄酒</a>
+							    </dd>
+							    <dt>产地</dt>
+							    <dd class="clearfix">
+							    	<a href="#">四川</a>
+							      <a href="#" >贵州</a>
+							      <a href="#">法国</a>
+							      <a href="#">美国</a>
+								</dd>
+							</dl>	
+							<dl class="tuijian">
+								<dt>推荐品牌</dt>
+								<dd></dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+						<div id="six"><a href="#"><i>&nbsp;</i>婚庆专区</a></div>
+						<a href="#" class="bg1">茅台</a>
+						<a href="#">拉菲</a>
+						<a href="#">五粮液</a>
+						<a href="#">张裕</a>
+						<div class="pop">
+							<dl>
+	  							<dt>品牌</dt>
+								<dd class="clearfix">
+								      <a href="#">剑南春</a>
+									  <a href="#">泸州老窖</a>
+									  <a href="#">伊莎特</a>
+									  <a href="#">佩西</a>
+									  <a href="#">卡萨玛利亚</a>
+									  <a href="#">龙船康帝</a>
+									  <a href="#">郎酒</a>
+								</dd>
+							    <dt>种类</dt>
+							    <dd class="clearfix">
+							      <a href="#">白酒</a>
+							      <a href="#">红酒</a> 
+							      <a href="#">洋酒</a>
+							      <a href="#">起泡酒</a>
+							      <a href="#">黄酒</a>
+							    </dd>
+							    <dt>产地</dt>
+							    <dd class="clearfix">
+							      <a href="#" >贵州</a>
+							       <a href="#">四川</a>
+							      <a href="#">南非</a>
+							      <a href="#">法国</a>
+							      <a href="#">英国</a>
+								</dd>
+							</dl>	
+							<dl class="tuijian">
+								<dt>推荐品牌</dt>
+								<dd></dd>
+							</dl>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="lunBo">
+				<ul>
+					<li class="show"><a href="javascript:;" style="background:url(img/lunbo1.jpg) no-repeat center center;background-size:100% 100% ;"></a></li>
+					<li><a href="javascript:;" style="background: url(img/lunbo2.jpg) no-repeat center center;background-size:100% 100% ;"></a></li>
+					<li><a href="javascript:;" style="background: url(img/lunbo3.jpg) no-repeat center center;background-size:100% 100% ;"></a></li>
+					<li><a href="javascript:;" style="background: url(img/lunbo4.jpg) no-repeat center center;background-size:100% 100% ;"></a></li>
+				</ul>
+				<div class="tab_nav">
+					<a href="javascript:;" class="cur"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+					<a href="javascript:;"></a>
+				</div>
+			</div>
+			<div class="small_banner">
+					<a href="#" class="first_a"><img src="img/201610141151031561720.jpg" /></a>
+					<a href="#" class="second_a"><img src="img/201609261652451069550.jpg" /></a>
+			</div>
+		</div>
+		<!--banner结束-->
+		<!--主体部分开始-->
+		<div class="layout" id="main">
+			<div class="ad">
+				<div><img src="img/ad1.png"/></div>
+				<div style="margin:0px 1px 0 2px"><img src="img/ad2.png"/></div>
+				<div><img src="img/ad3.png"/></div>
+			</div>
+			<div class="LimitedTimeBuy">
+				<h5></h5>
+				<ul>
+					<li>
+						<a href="#" class="liml_img"><img src="img/limi1.png" /></a>
+						<div class="lxftime" endtime="2017/05/23 00:00:00"></div>
+						<span>RMB <b> 399.00</b></span>
+						<a href="#" class="buy_now"><span></span>立即抢购</a>
+					</li>
+					<li>
+						<a href="#" class="liml_img"><img src="img/limi2.png" /></a>
+						<div class="lxftime" endtime="2017/05/23 00:00:00"></div>
+						<span>RMB <b> 359.00</b></span>
+						<a href="#" class="buy_now"><span></span>立即抢购</a>
+					</li>
+					<li>
+						<a href="#" class="liml_img"><img src="img/limi3.png" /></a>
+						<div class="lxftime" endtime="2017/05/23 00:00:00"></div>
+						<span>RMB <b> 399.00</b></span>
+						<a href="#" class="buy_now"><span></span>立即抢购</a>
+					</li>
+					<li>
+						<a href="#" class="liml_img"><img src="img/limi4.png" /></a>
+						<div class="lxftime" endtime="2017/05/23 00:00:00"></div>
+						<span>RMB <b> 149.00</b></span>
+						<a href="#" class="buy_now"><span></span>立即抢购</a>
+					</li>
+					<li>
+						<a href="#" class="liml_img"><img src="img/limi5.png" /></a>
+						<div class="lxftime" endtime="2017/05/23 00:00:00"></div>
+						<span>RMB <b> 195.00</b></span>
+						<a href="#" class="buy_now"><span></span>立即抢购</a>
+					</li>
+				</ul>
+			</div>
+			<div class='popular-product'>
+				<h3>人气单品</h3>
+				<div>
+					<a href="#"><img src="img/hot1.jpg"/></a>
+					<a href="#"><img src="img/hot2.jpg"/></a>
+					<a href="#"><img src="img/hot3.jpg"/></a>
+					<a href="#"><img src="img/hot4.jpg"/></a>
+					<a href="#" class="MarginL0"><img src="img/hot5.jpg"/></a>
+					<a href="#"><img src="img/hot6.jpg"/></a>
+					<a href="#"><img src="img/hot7.jpg"/></a>
+					<a href="#"><img src="img/hot8.jpg"/></a>
+				</div>
+			</div>
+			<div class="jingxuan Louti">
+				<div class="title">
+					<h3>精选尚品</h3>
+					<ul>
+						<li class="li_active">热卖推荐</li>
+						<li>朋友聚会</li>
+						<li>自己喝</li>
+						<li>送礼必备</li>
+						<li>大型宴请</li>	
+					</ul>
+				</div>
+				<div class="content_main">
+					<div class="content_left">
+						<ul>
+							<li><a href="">五粮液</a></li>
+							<li><a href="">拉菲</a></li>
+							<li><a href="">茅台</a></li>
+							<li><a href="">张裕</a></li>
+							<li><a href="">天佑德</a></li>
+							<li><a href="">泸州老窖</a></li>
+							<li><a href="">洋河</a></li>
+							<li><a href="">剑南春</a></li>
+						</ul>
+						<a href="javascript:;" class="left_btn">&lt;</a>
+						<div class="tab">
+							<!--<a href="javascript:;" class="left_btn">&lt;</a>-->
+							<ul>
+								<li><a href="javascript:;"><img src="img/logo_323.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_322.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_324.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_326.jpg"/></a></li>
+								<li id="MarginL0"><a href="javascript:;"><img src="img/logo_343.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_697.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_838.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_883.jpg"/></a></li>
+							</ul>
+							<!--<a href="javascript:;" class="right_btn">&gt;</a>-->
+						</div>
+						<a href="javascript:;" class="right_btn">&gt;</a>
+					</div>
+					<ul class="hotSell showUl">
+						<div>
+							<a href="javascript:;"><img src="img/floor_RTwo_20160921104324873688.jpg"/></a>
+						</div>
+						<li>
+							<a href="javascript:;"><img src="img/floor_RThree_20161019132918852950.jpg"/></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/floor_RFour_20161014233402182454.jpg"/></a>
+						</li>
+						<li id="MarginL0">
+							<a href="javascript:;"><img src="img/floor_RFive_20160921104324890689.jpg"/></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/floor_RSix_20161015004748948650.jpg"/></a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:;"><img src="img/1_350.png.jpg"/></a>
+							<span>￥139.00</span>
+							<a href="javascript:;">佩西精选干红葡萄酒 750ml...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350_1.png"/></a>
+							<span>￥189.00</span>
+							<a href="javascript:;">皇家贝斯美乐威士忌 700ml...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350_2.png"/></a>
+							<span>￥399.00</span>
+							<a href="javascript:;">人头马VSOP特优香槟干...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350_3.png"/></a>
+							<span>￥119.00</span>
+							<a href="javascript:;">53°茅台迎宾酒（旧包装）...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3504.png"/></a>
+							<span>￥139.00</span>
+							<a href="javascript:;">52°洋河海之蓝 480ml...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3505.png"/></a>
+							<span>￥399.00</span>
+							<a href="javascript:;">马克斯威-美国加利福尼亚赤...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3506.png"/></a>
+							<span>￥259.00</span>
+							<a href="javascript:;">52°茅台酿原浆 500ml（6...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3507.png"/></a>
+							<span>￥149.00</span>
+							<a href="javascript:;">卡萨玛利亚干红葡萄酒（6...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3508.png"/></a>
+							<span>￥207.00</span>
+							<a href="javascript:;">3.8°圣卡罗天然水果气泡酒...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3509.png"/></a>
+							<span>￥195.00</span>
+							<a href="javascript:;">52°绵竹大曲纯粮经典...</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:;"><img src="img/1_3510.png"/></a>
+							<span>￥149.00</span>
+							<a href="javascript:;">42°牛栏山陈酿 500ml（12...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3511.png"/></a>
+							<span>￥329.00</span>
+							<a href="javascript:;">53°红星蓝瓶八年陈酿  500ml...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3512.png"/></a>
+							<span>￥369.00</span>
+							<a href="javascript:;">67°衡水老白干蓝花瓷 750...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3513.png"/></a>
+							<span>￥299.00</span>
+							<a href="javascript:;">拉菲珍藏梅多克法定产区红...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3514.png"/></a>
+							<span>￥149.00</span>
+							<a href="javascript:;">52°五粮液股份有限公司永...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3515.png"/></a>
+							<span>￥179.00</span>
+							<a href="javascript:;">56°红星美国出口二锅头 75...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3516.png"/></a>
+							<span>￥399.00</span>
+							<a href="javascript:;">佳德威堡干红葡萄酒 750ml...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3517.png"/></a>
+							<span>￥69.00</span>
+							<a href="javascript:;">锐澳RIO鸡尾酒 6瓶组合装...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3518.png"/></a>
+							<span>￥89.00</span>
+							<a href="javascript:;">52°茅台醇原浆 500ml(两...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3519.png"/></a>
+							<span>￥195.00</span>
+							<a href="javascript:;">52°绵竹大曲纯粮经典...</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:;"><img src="img/1_3520.png"/></a>
+							<span>￥369.00</span>
+							<a href="javascript:;">53°成龙酒·成龙祥凤礼盒 50...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3521.png"/></a>
+							<span>￥399.00</span>
+							<a href="javascript:;">52°出口型白西凤棉柔凤香...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3522.png"/></a>
+							<span>￥699.00</span>
+							<a href="javascript:;">52°剑南春500ml*2</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3523.png"/></a>
+							<span>￥149.00</span>
+							<a href="javascript:;">拉菲传奇波尔多 750ml(2...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3524.png"/></a>
+							<span>￥398.00</span>
+							<a href="javascript:;">52°五粮液1995专卖店 500...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3525.png"/></a>
+							<span>￥199.00</span>
+							<a href="javascript:;">张裕干红葡萄酒 750ml...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3526.png"/></a>
+							<span>￥119.00</span>
+							<a href="javascript:;">53°茅台迎宾酒（旧包装）...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3527.png"/></a>
+							<span>￥278.00</span>
+							<a href="javascript:;">52°洋河海之蓝 480ml...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3528.png"/></a>
+							<span>￥149.00</span>
+							<a href="javascript:;">52°五粮液股份有限公司永...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3529.png"/></a>
+							<span>￥288.00</span>
+							<a href="javascript:;">53°国台·好礼·500ml*2（礼...</a>
+						</li>
+					</ul>
+					<ul >
+						<li><a href="javascript:;"><img src="img/1_350_3.png"/></a>
+							<span>￥119.00</span>
+							<a href="javascript:;">53°茅台迎宾酒（旧包装）...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3523.png"/></a>
+							<span>￥149.00</span>
+							<a href="javascript:;">拉菲传奇波尔多 750ml(2...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3527.png"/></a>
+							<span>￥278.00</span>
+							<a href="javascript:;">52°洋河海之蓝 480ml...</a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/1_3530.png"/></a>
+							<span>￥298.00</span>
+							<a href="javascript:;">52°五粮液华彩人生10典藏...</a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/1_3531.png"/></a>
+							<span>￥259.00</span>
+							<a href="javascript:;">龙船康帝波尔多红酒 750ml...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3525.png"/></a>
+							<span>￥199.00</span>
+							<a href="javascript:;">张裕干红葡萄酒 750ml...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3528.png"/></a>
+							<span>￥149.00</span>
+							<a href="javascript:;">52°五粮液股份有限公司永...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3532.png"/></a>
+							<span>￥389.00</span>
+							<a href="javascript:;">马克斯威-美国加利福尼亚赤...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3506.png"/></a>
+							<span>￥259.00</span>
+							<a href="javascript:;">52°茅台酿原浆 500ml（6...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3507.png"/></a>
+							<span>￥149.00</span>
+							<a href="javascript:;">卡萨玛利亚干红葡萄酒（6...</a>
+						</li>
+					</ul>
+					<div class="content_imgs">
+						<a href="javascript:;"><img src="img/floor_RSeven_20161015011835889289.jpg"/></a>
+						<a href="javascript:;"><img src="img/floor_REight_20160921104324912690.jpg" class="fixedWH"/></a>
+						<a href="javascript:;"><img src="img/floor_ScrollOne_20161013204929499562.jpg"/></a>
+						<a href="javascript:;"><img src="img/floor_ScrollTwo_20161014150336864065.jpg"/></a>
+					</div>
+				</div>
+			</div>
+			<div class="baijiu Louti">
+				<div class="title">
+					<h3>白酒馆</h3>
+					<ul>
+						<li class="li_active">热卖推荐</li>
+						<li>天佑德</li>
+						<li>茅台</li>
+						<li>五粮液</li>
+					</ul>
+				</div>
+				<div class="content_main">
+					<div class="content_left">
+						<ul>
+							<li><a href="#">茅台</a></li>
+							<li><a href="#">五粮液</a></li>
+							<li><a href="#">天佑德</a></li>
+							<li><a href="#">洋河</a></li>
+							<li><a href="#">剑南春</a></li>
+							<li><a href="#">泸州老窖</a></li>
+							<li><a href="#">牛栏山</a></li>
+							<li><a href="#">一道泓</a></li>
+						</ul>
+						<a href="javascript:;" class="left_btn">&lt;</a>
+						<div class="tab">
+							<ul>
+								<li><a href="javascript:;"><img src="img/logo_323.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_322.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_324.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_326.jpg"/></a></li>
+								<li id="MarginL0"><a href="javascript:;"><img src="img/logo_343.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_697.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_838.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_883.jpg"/></a></li>
+							</ul>
+						</div>
+						<a href="javascript:;" class="right_btn">&gt;</a>
+					</div>
+					<ul class="hotSell showUl">
+						<div>
+							<a href="javascript:;"><img src="img/floor_RTwo_20161018180904509405.jpg"/></a>
+						</div>
+						<li>
+							<a href="javascript:;"><img src="img/floor_RThree_20161014143518847883.jpg"/></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/floor_RFour_20160921104513483900.jpg"/></a>
+						</li>
+						<li id="MarginL0">
+							<a href="javascript:;"><img src="img/floor_RFive_20160921104513489901.jpg"/></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/floor_RSix_20161014143518863483.jpg"/></a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:;"><img src="img/3166.png"/></a>
+							<span>￥158.00</span>
+							<a href="javascript:;">43°天佑德青稞酒海拔3000...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/3167.png"/></a>
+							<span>￥118.00</span>
+							<a href="javascript:;">46°天佑德青稞酒海拔2800...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/3168.png"/></a>
+							<span>￥188.00</span>
+							<a href="javascript:;">46°天佑德青稞酒海拔3200...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/3169.png"/></a>
+							<span>￥248.00</span>
+							<a href="javascript:;">45°天佑德青稞酒海拔3500...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/3170.png"/></a>
+							<span>￥388.00</span>
+							<a href="javascript:;">43°天佑德青稞酒海拔3800...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/3171.png"/></a>
+							<span>￥88.00</span>
+							<a href="javascript:;">48°天佑德青稞酒生态四星...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/3172.png"/></a>
+							<span>￥148.00</span>
+							<a href="javascript:;">52°天佑德青稞酒生态五星...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/3173.png"/></a>
+							<span>￥196.00</span>
+							<a href="javascript:;">42°天佑德青稞酒 海拔3000...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/3174.png"/></a>
+							<span>￥299.00</span>
+							<a href="javascript:;">42°西藏天佑德青稞酒-加持...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/3175.png"/></a>
+							<span>￥399.00</span>
+							<a href="javascript:;">45°天佑德生态三星 500ml...</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:;"><img src="img/1_350(43).png"/></a>
+							<span>￥1030.00</span>
+							<a href="javascript:;">53°茅台飞天 500ml</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(44).png"/></a>
+							<span>￥159.00</span>
+							<a href="javascript:;">53°茅台仁酒  500ml</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(3).png"/></a>
+							<span>￥329.00</span>
+							<a href="javascript:;">53°茅台迎宾酒（旧包装）...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(45).png"/></a>
+							<span>￥69.00</span>
+							<a href="javascript:;">52°茅台播窖1935 500ml...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(5).png"/></a>
+							<span>￥369.00</span>
+							<a href="javascript:;">53°成龙酒·成龙祥凤礼盒 50...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(46).png"/></a>
+							<span>￥529.00</span>
+							<a href="javascript:;">53°茅台王子酒（旧包装）...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(47).png"/></a>
+							<span>￥299.00</span>
+							<a href="javascript:;">43°茅台迎宾酒 500ml(6瓶...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(48).png"/></a>
+							<span>￥418.00</span>
+							<a href="javascript:;">53°茅台财富酒和尊 500ml</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(9).png"/></a>
+							<span>￥259.00</span>
+							<a href="javascript:;">52°茅台醇原浆 500ml（6...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(49).png"/></a>
+							<span>￥680.00</span>
+							<a href="javascript:;">43°飞天茅台（2012年份）...</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:;"><img src="img/1_350(11).png"/></a>
+							<span>￥799.00</span>
+							<a href="javascript:;">52°五粮液  500ml</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(12).png"/></a>
+							<span>￥719.00</span>
+							<a href="javascript:;">68°五粮液  500ml</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(13).png"/></a>
+							<span>￥739.00</span>
+							<a href="javascript:;">52°五粮液1618 500ml</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(14).png"/></a>
+							<span>￥399.00</span>
+							<a href="javascript:;">50°五粮醇红淡雅 500ml（6...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(15).png"/></a>
+							<span>￥249.00</span>
+							<a href="javascript:;">50°五粮醇金淡雅 500ml（2......</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(16).png"/></a>
+							<span>￥396.00</span>
+							<a href="javascript:;">52°五粮液1995专卖店 500...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(17).png"/></a>
+							<span>￥439.00</span>
+							<a href="javascript:;">52°五粮液华彩人生30珍藏...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(18).png"/></a>
+							<span>￥149.00</span>
+							<a href="javascript:;">53°五粮液股份有限公司永...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(19).png"/></a>
+							<span>￥259.00</span>
+							<a href="javascript:;">52°五粮液华彩人生20珍藏...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(20).png"/></a>
+							<span>￥498.00</span>
+							<a href="javascript:;">52°五粮液华彩人生（金标...</a>
+						</li>
+					</ul>
+					<div class="content_imgs">
+						<a href="javascript:;"><img src="img/floor_RSeven_20161024114633738282.jpg"/></a>
+						<a href="javascript:;"><img src="img/floor_REight_20161015020146787480.jpg" class="fixedWH"/></a>
+						<a href="javascript:;"><img src="img/floor_ScrollOne_20161021103631616650.jpg"/></a>
+						<a href="javascript:;"><img src="img/floor_ScrollTwo_20161015005816343535.jpg"/></a>
+					</div>
+				</div>
+			</div>
+			<div class="hongjiu Louti">
+				<div class="title">
+					<h3>红酒馆</h3>
+					<ul>
+						<li class="li_active">热卖推荐</li>
+						<li>拉菲</li>
+						<li>张裕</li>
+					</ul>
+				</div>
+				<div class="content_main">
+					<div class="content_left">
+						<ul>
+							<li><a href="#">拉菲</a></li>
+							<li><a href="#">伊莎特</a></li>
+							<li><a href="#">张裕</a></li>
+							<li><a href="#">黄尾袋鼠</a></li>
+							<li><a href="#">库玛拉</a></li>
+							<li><a href="#">龙船</a></li>
+							<li><a href="#">圣迪斯</a></li>
+							<li><a href="#">奔富</a></li>
+						</ul>
+						<a href="javascript:;" class="left_btn">&lt;</a>
+						<div class="tab">
+							<ul>
+								<li><a href="javascript:;"><img src="img/logo_457.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_884.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_697.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_883.jpg"/></a></li>
+								<li id="MarginL0"><a href="javascript:;"><img src="img/logo_632.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_543.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_329.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_798.jpg"/></a></li>
+							</ul>
+						</div>
+						<a href="javascript:;" class="right_btn">&gt;</a>
+					</div>
+					<ul class="hotSell showUl">
+						<div>
+							<a href="javascript:;"><img src="img/floor_RTwo_20160921104707341413.jpg"/></a>
+						</div>
+						<li>
+							<a href="javascript:;"><img src="img/floor_RThree_20161014143611934776.jpg"/></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/floor_RFour_20161014145321942185.jpg"/></a>
+						</li>
+						<li id="MarginL0">
+							<a href="javascript:;"><img src="img/floor_RFive_20161024124118573651.jpg"/></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/floor_RSix_20161014150205915906.jpg"/></a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:;"><img src="img/1_350(58).png"/></a>
+							<span>￥169.00</span>
+							<a href="javascript:;">拉菲珍藏波尔多干红葡萄...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(59).png"/></a>
+							<span>￥135.00</span>
+							<a href="javascript:;">拉菲尚品波尔多法定产区红...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(60).png"/></a>
+							<span>￥369.00</span>
+							<a href="javascript:;">拉菲巴斯克卡本妮苏维翁红...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(61).png"/></a>
+							<span>￥468.00</span>
+							<a href="javascript:;">拉菲华诗歌 750ml（6瓶装）</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(62).png"/></a>
+							<span>￥528.00</span>
+							<a href="javascript:;">拉菲珍藏波尔多 750ml（6......</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(63).png"/></a>
+							<span>￥1290.00</span>
+							<a href="javascript:;">拉菲传奇波尔多法定产区红...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(64).png"/></a>
+							<span>￥219.00</span>
+							<a href="javascript:;">拉菲珍藏波尔多 750ml（2...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(65).png"/></a>
+							<span>￥159.00</span>
+							<a href="javascript:;">拉菲华诗歌 750ml（2瓶装）</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3523.png"/></a>
+							<span>￥149.00</span>
+							<a href="javascript:;">拉菲传奇波尔多 750ml（2...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3513.png"/></a>
+							<span>￥299.00</span>
+							<a href="javascript:;">拉菲珍藏梅多克法定产区红...</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:;"><img src="img/1_350(66).png"/></a>
+							<span>￥56.00</span>
+							<a href="javascript:;">张裕金奖白兰地 700ml</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(67).png"/></a>
+							<span>￥39.00</span>
+							<a href="javascript:;">11.5°张裕干红葡萄酒 750ml</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(68).png"/></a>
+							<span>￥569.00</span>
+							<a href="javascript:;">张裕特选级特制解百纳干红...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(69).png"/></a>
+							<span>￥199.00</span>
+							<a href="javascript:;">张裕加气苹果酒 1500ml...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(70).png"/></a>
+							<span>￥1014.00</span>
+							<a href="javascript:;">张裕品酒大师750ml*6</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(71).png"/></a>
+							<span>￥58.00</span>
+							<a href="javascript:;">11.5°张裕干红葡萄酒 750ml...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(72).png"/></a>
+							<span>￥199.00</span>
+							<a href="javascript:;">张裕特选级特制解百纳干红...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(73).png"/></a>
+							<span>￥39.00</span>
+							<a href="javascript:;">张裕干红葡萄酒 750ml</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(74).png"/></a>
+							<span>￥69.00</span>
+							<a href="javascript:;">张裕干红葡萄酒 750ml（2...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_3525.png"/></a>
+							<span>￥199.00</span>
+							<a href="javascript:;">张裕干红葡萄酒 750ml（6...</a>
+						</li>
+					</ul>
+					<div class="content_imgs">
+						<a href="javascript:;"><img src="img/floor_RSeven_20160921104707384415.jpg"/></a>
+						<a href="javascript:;"><img src="img/floor_REight_20160921104707389415.jpg" class="fixedWH"/></a>
+						<a href="javascript:;"><img src="img/floor_ScrollOne_20160921104707393415.jpg"/></a>
+						<a href="javascript:;"><img src="img/floor_ScrollTwo_20161019134004870896.jpg"/></a>
+					</div>
+				</div>
+			</div>
+			<div class="yangjiu Louti">
+				<div class="title">
+					<h3>洋酒&啤酒馆</h3>
+					<ul>
+						<li class="li_active">热卖推荐</li>
+						<li>伏特加</li>
+						<li>威士忌</li>
+					</ul>
+				</div>
+				<div class="content_main">
+					<div class="content_left">
+						<ul>
+							<li><a href="#">人头马</a></li>
+							<li><a href="#">马爹利</a></li>
+							<li><a href="#">轩尼诗</a></li>
+							<li><a href="#">绝对伏特加</a></li>
+							<li><a href="#">百加得</a></li>
+							<li><a href="#">翰格蓝爵</a></li>
+							<li><a href="#">皇家礼炮</a></li>
+							<li><a href="#">深蓝</a></li>
+						</ul>
+						<a href="javascript:;" class="left_btn">&lt;</a>
+						<div class="tab">
+							<ul>
+								<li><a href="javascript:;"><img src="img/logo_794.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_329.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_840.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_632.jpg"/></a></li>
+								<li id="MarginL0"><a href="javascript:;"><img src="img/logo_665.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_331.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_534.jpg"/></a></li>
+								<li><a href="javascript:;"><img src="img/logo_642.jpg"/></a></li>
+							</ul>
+						</div>
+						<a href="javascript:;" class="right_btn">&gt;</a>
+					</div>
+					<ul class="hotSell showUl">
+						<div>
+							<a href="javascript:;"><img src="img/floor_RTwo_20160921104707341413.jpg"/></a>
+						</div>
+						<li>
+							<a href="javascript:;"><img src="img/floor_RThree_20161014143611934776.jpg"/></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/floor_RFour_20161014145321942185.jpg"/></a>
+						</li>
+						<li id="MarginL0">
+							<a href="javascript:;"><img src="img/floor_RFive_20161024124118573651.jpg"/></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/floor_RSix_20161014150205915906.jpg"/></a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:;"><img src="img/1_350(75).png"/></a>
+							<span>￥109.00</span>
+							<a href="javascript:;">皇太子伏特加（12） 700ml</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(76).png"/></a>
+							<span>￥99.00</span>
+							<a href="javascript:;">40°旗舰伏特加礼盒包装  50...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(77).png"/></a>
+							<span>￥79.00</span>
+							<a href="javascript:;">40°叶卡伏特加 500ml</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(78).png"/></a>
+							<span>￥199.00</span>
+							<a href="javascript:;">40°绝对伏特加柑橘味700ml</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(79).png"/></a>
+							<span>￥119.00</span>
+							<a href="javascript:;">40°绝对伏特加覆盆莓味700...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(80).png"/></a>
+							<span>￥199.00</span>
+							<a href="javascript:;">40°绝对伏特加七味迷你套装</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(81).png"/></a>
+							<span>￥119.00</span>
+							<a href="javascript:;">40°绝对伏特加苹果梨味700...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(82).png"/></a>
+							<span>￥159.00</span>
+							<a href="javascript:;">绝对伏特加原创 700ml</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(83).png"/></a>
+							<span>￥89.00</span>
+							<a href="javascript:;">深蓝牌SKYY原味伏特加 75...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(84).png"/></a>
+							<span>￥45.00</span>
+							<a href="javascript:;">斯米诺（皇冠）红牌伏特加...</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="javascript:;"><img src="img/1_350(85).png"/></a>
+							<span>￥199.00</span>
+							<a href="javascript:;">尊尼获加黑方威士忌 700ml</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(86).png"/></a>
+							<span>￥209.00</span>
+							<a href="javascript:;">百龄坛12年苏格兰威士忌 7...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(87).png"/></a>
+							<span>￥129.00</span>
+							<a href="javascript:;">兄弟12年典藏威士忌 375ml...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(88).png"/></a>
+							<span>￥289.00</span>
+							<a href="javascript:;">尊尼获加红方威士忌 700ml...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(89).png"/></a>
+							<span>￥39.00</span>
+							<a href="javascript:;">杰克丹尼可乐威士忌味配制...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(90).png"/></a>
+							<span>￥89.00</span>
+							<a href="javascript:;">皇家贝斯调配威士忌1.8L</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(91).png"/></a>
+							<span>￥299.00</span>
+							<a href="javascript:;">格兰菲迪15年单一麦芽威士...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(92).png"/></a>
+							<span>￥49.00</span>
+							<a href="javascript:;">杰克丹尼可乐威士忌味配制...</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(93).png"/></a>
+							<span>￥85.00</span>
+							<a href="javascript:;">占边波本威士忌750ml</a>
+						</li>
+						<li><a href="javascript:;"><img src="img/1_350(94).png"/></a>
+							<span>￥159.00</span>
+							<a href="javascript:;">尊尼获加红牌调配苏格兰威...</a>
+						</li>
+					</ul>
+					<div class="content_imgs">
+						<a href="javascript:;"><img src="img/floor_RSeven_20160921104707384415.jpg"/></a>
+						<a href="javascript:;"><img src="img/floor_REight_20160921104707389415.jpg" class="fixedWH"/></a>
+						<a href="javascript:;"><img src="img/floor_ScrollOne_20160921104707393415.jpg"/></a>
+						<a href="javascript:;"><img src="img/floor_ScrollTwo_20161019134004870896.jpg"/></a>
+					</div>
+				</div>
+			</div>
+			<div class="pinpai">
+				<h3>品牌旗舰店</h3>
+				<a href="javascript:;"><img src="img/201609211049333737650.jpg" alt="" /></a>
+				<div>
+					<div>
+						<div>
+							<ul>
+								<li><a href="#"><img src="img/logo/logo_322.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_323.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_324.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_325.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_326.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_329.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_330.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_331.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_332.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_334.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_335.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_336.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_337.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_339.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_342.jpg"/></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="img/logo/logo_343.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_401.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_416.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_437.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_440.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_442.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_445.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_449.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_457.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_464.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_467.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_473.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_479.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_490.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_491.jpg"/></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="img/logo/logo_492.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_503.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_511.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_521.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_523.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_534.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_538.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_543.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_561.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_569.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_579.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_590.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_594.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_602.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_605.jpg"/></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="img/logo/logo_614.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_616.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_626.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_631.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_632.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_637.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_640.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_641.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_642.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_643.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_650.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_652.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_654.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_655.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_656.jpg"/></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="img/logo/logo_660.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_662.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_665.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_668.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_671.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_672.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_674.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_676.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_688.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_691.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_694.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_695.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_696.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_697.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_701.jpg"/></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="img/logo/logo_705.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_714.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_715.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_716.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_725.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_736.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_742.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_743.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_744.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_746.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_752.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_754.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_764.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_766.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_768.jpg"/></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="img/logo/logo_769.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_774.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_790.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_794.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_795.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_797.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_798.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_801.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_802.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_803.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_807.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_822.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_827.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_828.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_835.jpg"/></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="img/logo/logo_836.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_837.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_838.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_840.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_846.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_847.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_849.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_850.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_851.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_852.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_853.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_862.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_883.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_884.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_886.jpg"/></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="img/logo/logo_890.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_891.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_895.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_896.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_897.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_898.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_899.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_900.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_904.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_905.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_906.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_907.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_908.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_910.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_911.jpg"/></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="img/logo/logo_912.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_913.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_915.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_916.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_928.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_938.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_939.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_940.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_941.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_942.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_943.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_944.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_946.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_948.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_949.jpg"/></a></li>
+							</ul>
+							<ul>
+								<li><a href="#"><img src="img/logo/logo_950.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_951.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_952.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_953.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_954.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_955.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_958.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_959.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_961.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_962.jpg"/></a></li>
+								<li id="BorderL0"><a href="#"><img src="img/logo/logo_963.jpg"/></a></li>
+								<li><a href="#"><img src="img/logo/logo_964.jpg"/></a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="javascript:;" class="tab_left_btn">&lt;</a>
+					<a href="javascript:;" class="tab_right_btn">&gt;</a>
+				</div>
+				<a href="javascript:;"><img src="img/201609211049495626910.jpg" alt="" /></a>
+			</div>
+		</div>
+		<!--主体部分结束-->
+		<!--楼层导航开始-->
+		<div id="LoutiNav">
+ 			<ul>
+				<li>1F <span>精选</span> </li>
+				<li>2F <span>白酒</span> </li>
+				<li>3F <span>红酒</span> </li>
+				<li>4F <span>洋酒</span> </li>
+			</ul>
+		</div>
+		<!--楼层导航结束-->
+		<!--footer开始-->
+		<div class="footer">
+			<div class="ensure">
+				<div class="layout">
+					<dl>
+						<dt><img src="img/zhengpinbaozhang.png"/></dt>
+						<dd>
+							<h3>正品保障</h3>
+							<p>厂家直供 正品防伪</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/lingjun20.png"/></dt>
+						<dd>
+							<h3>领军o2o</h3>
+							<p>中国酒类 o2o第一家</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/wuxia.png"/></dt>
+						<dd>
+							<h3>无理由退货</h3>
+							<p>拆封无条件退货</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/shandian.png"/></dt>
+						<dd>
+							<h3>闪电配送</h3>
+							<p>专业配送 快速送达</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/baiwan.png"/></dt>
+						<dd>
+							<h3>百万口碑</h3>
+							<p>400万用户的认可</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/jinpai.png"/></dt>
+						<dd>
+							<h3>金牌服务</h3>
+							<p>7*12小时贴心服务</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="foot_service">
+				<div class="layout">
+					<div class="fleft">
+						<div class="zj"></div>
+						<div class="ls"></div>
+						<div class="yt"></div>
+					</div>
+					<ul>
+						<h3>购物指南</h3>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">用户注册协议</a></li>
+						<li><a href="#">会员积分</a></li>
+						<li><a href="#">发票问题</a></li>
+						<li><a href="#">优惠卷问题</a></li>
+					</ul>
+					<ul>
+						<h3>配送说明</h3>
+						<li><a href="#">99免运费</a></li>
+						<li><a href="#">配送说明</a></li>
+						<li><a href="#">快递查询</a></li>
+						<li><a href="#">验货与签收</a></li>
+					</ul>
+					<ul>
+						<h3>支付方式</h3>
+						<li><a href="#">支付宝</a></li>
+						<li><a href="#">银联/信用卡</a></li>
+						<li><a href="#">微信支付</a></li>
+						<li><a href="#">货到付款</a></li>
+						<li><a href="#">账户余额支付</a></li>
+					</ul>
+					<ul>
+						<h3>售后服务</h3>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">服务承诺</a></li>
+						<li><a href="#">退款说明</a></li>
+						<li><a href="#">退换货政策</a></li>
+						<li><a href="#">退换货流程</a></li>
+					</ul>
+					<ul>
+						<h3>服务保障</h3>
+						<li><a href="#">30分钟快速响应</a></li>
+						<li><a href="#">7*12小时贴心服务</a></li>
+						<li><a href="#">真品防伪，四码合一</a></li>
+					</ul>
+					<div class="qr">
+						<h2>中酒微信</h2>
+						<img src="img/foot/wx.jpg"/>
+						<p>中酒官方微信</p>
+					</div>
+					<div class="qr">
+						<h2>手机中酒</h2>
+						<img src="img/foot/mob.jpg"/>
+						<p>下载移动客户端</p>
+					</div>
+				</div>
+			</div>
+			<div class="foot_nav">
+				<div class="layout">
+					<ul>
+						<li><a href="#">关于中酒</a></li>
+						<li><a href="#">媒体报道</a></li>
+						<li><a href="#">商务合作</a></li>
+						<li><a href="#">品牌入驻</a></li>
+						<li><a href="#">加入中酒</a></li>
+						<li><a href="#">商家加盟</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="foot_web layout">
+				<p>Copyright © 2016 中酒网(www.zhongjiu.cn) 版权所有 京ICP备12022216号-2  | 京公网安备 11010502026701 | 购买前请确认达到法定饮酒年龄！中酒网不销售任何含酒精产品给18岁以下人士！</p>
+				<a href="#"><img src="img/foot/authentication_01.png"/></a>
+				<a href="#"><img src="img/foot/brand_bottom_large.jpg"/></a>
+				<a href="#"><img src="img/foot/cnnic.png"/></a>
+				<a href="#"><img src="img/foot/authentication_05.png"/></a>
+				<a href="#"><img src="img/foot/authentication_07.png"/></a>
+				<a href="#"><img src="img/foot/authentication_09.png"/></a>
+			</div>
+		</div>
+		<!--footer结束-->
+	</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>卖家管理平台</title>
+		<link rel="stylesheet" type="text/css" href="../common/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="sellerManage.css" />
+		<script src="../common/js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../common/js/jquery.cookie.js"></script>
+		<script src="sellerManage.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部开始-->
+		<div class="header">
+			<div class="layout">
+				<!--头部左边-->
+				<div class="h_l">
+					<span>您好，欢迎来到<em style="color: #3E3A39;">中酒网！</em></span>
+					<a href="javascript:;" style="color: #E3393C;">去买家中心</a>
+					<div id="loginInfo">
+						<span id="username"></span>
+						<a href="javascript:;" id="logout">[退出]</a>
+					</div>
+					<div id="goLogin">
+						<a href="../login/login.html">请登录</a>|<a href="../register/register.html">免费注册</a>
+					</div>
+				</div>
+				<!--头部右边-->
+				<ul class="h_r">
+					<li class="haveSubM">
+						<span class="outline"></span>
+						<span class="blank"></span>
+						<a class="myZJ">我的中酒网</a>
+						<div id="dropdown-menu">
+						  <ol>
+							<li>
+						      <a href="">已买到的商品</a>
+						    </li>
+						    <li>
+						      <a href="">我关注的商品</a>
+						    </li>
+						    <li>
+						      <a href="">我关注的店铺</a>
+						    </li>
+						  </ol>
+						</div>
+					</li>
+					<li>
+						<a class="gouwuche">购物车<span class="cart_num">0</span>件</a>
+					</li>
+					<li class="haveSubM">
+						<a href="javascript:;">微信端</a>
+						<div id="dropdown-menu" class="dmenu">
+						  <img src="../img/qrCode.png" height="90" width="90">
+						</div>
+					</li>
+					<li class="haveSubM">
+						<a href="javascript:;">APP</a>
+						<div id="dropdown-menu" class="dmenu">
+						  <img src="../img/app.gif" height="90" width="90">
+						  <h3>扫描二维码</h3>
+						  <p> 下载手机客户端 </p>
+						</div>
+					</li>
+					<li class="haveSubM">
+						<a class="sellerCenter">卖家中心</a>
+						<div id="dropdown-menu" class="dmenu">
+						  <ol>
+						    <li>
+						      <a href="javascript:;">商家入驻</a>
+						    </li>
+						    <li>
+						      <a href="javascript:;">已卖出商品</a>
+						    </li>
+						    <li>
+						      <a href="javascript:;">发布商品</a>
+						    </li>
+						    <li>
+						      <a href="javascript:;">管理商品</a>
+						    </li>
+						  </ol>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:;">订购热线：400-798-9999</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--头部结束-->
+		<!--主体部分开始-->
+		<div class="main">
+			<ul class="tab_l">
+				<li class="first">商家入驻</li>
+				<li>已卖出商品</li>
+				<li class="addGoods">发布商品</li>
+				<li class="manageGoods">管理商品</li>
+			</ul>
+			<div>
+				<table class="goodTab" border="1px solid #000" cellspacing="0" cellpadding="0">
+					<tr>
+						<th>商品ID</th>
+						<th>商品</th>
+						<th>用户名</th>
+						<th>商品数量</th>
+						<th>店铺</th>
+						<th>操作</th>
+					</tr>
+				</table>
+			</div>
+			
+		</div>
+		<!--主体结束 -->
+		<!--footer开始-->
+		<div class="footer">
+			<div class="ensure">
+				<div class="layout">
+					<dl>
+						<dt><img src="../img/zhengpinbaozhang.png"/></dt>
+						<dd>
+							<h3>正品保障</h3>
+							<p>厂家直供 正品防伪</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/lingjun20.png"/></dt>
+						<dd>
+							<h3>领军o2o</h3>
+							<p>中国酒类 o2o第一家</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/wuxia.png"/></dt>
+						<dd>
+							<h3>无理由退货</h3>
+							<p>拆封无条件退货</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/shandian.png"/></dt>
+						<dd>
+							<h3>闪电配送</h3>
+							<p>专业配送 快速送达</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/baiwan.png"/></dt>
+						<dd>
+							<h3>百万口碑</h3>
+							<p>400万用户的认可</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/jinpai.png"/></dt>
+						<dd>
+							<h3>金牌服务</h3>
+							<p>7*12小时贴心服务</p>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="foot_service">
+				<div class="layout">
+					<div class="fleft">
+						<div class="zj"></div>
+						<div class="ls"></div>
+						<div class="yt"></div>
+					</div>
+					<ul>
+						<h3>购物指南</h3>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">用户注册协议</a></li>
+						<li><a href="#">会员积分</a></li>
+						<li><a href="#">发票问题</a></li>
+						<li><a href="#">优惠卷问题</a></li>
+					</ul>
+					<ul>
+						<h3>配送说明</h3>
+						<li><a href="#">99免运费</a></li>
+						<li><a href="#">配送说明</a></li>
+						<li><a href="#">快递查询</a></li>
+						<li><a href="#">验货与签收</a></li>
+					</ul>
+					<ul>
+						<h3>支付方式</h3>
+						<li><a href="#">支付宝</a></li>
+						<li><a href="#">银联/信用卡</a></li>
+						<li><a href="#">微信支付</a></li>
+						<li><a href="#">货到付款</a></li>
+						<li><a href="#">账户余额支付</a></li>
+					</ul>
+					<ul>
+						<h3>售后服务</h3>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">服务承诺</a></li>
+						<li><a href="#">退款说明</a></li>
+						<li><a href="#">退换货政策</a></li>
+						<li><a href="#">退换货流程</a></li>
+					</ul>
+					<ul>
+						<h3>服务保障</h3>
+						<li><a href="#">30分钟快速响应</a></li>
+						<li><a href="#">7*12小时贴心服务</a></li>
+						<li><a href="#">真品防伪，四码合一</a></li>
+					</ul>
+					<div class="qr">
+						<h2>中酒微信</h2>
+						<img src="../img/foot/wx.jpg"/>
+						<p>中酒官方微信</p>
+					</div>
+					<div class="qr">
+						<h2>手机中酒</h2>
+						<img src="../img/foot/mob.jpg"/>
+						<p>下载移动客户端</p>
+					</div>
+				</div>
+			</div>
+			<div class="foot_nav">
+				<div class="layout">
+					<ul>
+						<li><a href="#">关于中酒</a></li>
+						<li><a href="#">媒体报道</a></li>
+						<li><a href="#">商务合作</a></li>
+						<li><a href="#">品牌入驻</a></li>
+						<li><a href="#">加入中酒</a></li>
+						<li><a href="#">商家加盟</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="foot_web layout">
+				<p>Copyright © 2016 中酒网(www.zhongjiu.cn) 版权所有 京ICP备12022216号-2  | 京公网安备 11010502026701 | 购买前请确认达到法定饮酒年龄！中酒网不销售任何含酒精产品给18岁以下人士！</p>
+				<a href="#"><img src="../img/foot/authentication_01.png"/></a>
+				<a href="#"><img src="../img/foot/brand_bottom_large.jpg"/></a>
+				<a href="#"><img src="../img/foot/cnnic.png"/></a>
+				<a href="#"><img src="../img/foot/authentication_05.png"/></a>
+				<a href="#"><img src="../img/foot/authentication_07.png"/></a>
+				<a href="#"><img src="../img/foot/authentication_09.png"/></a>
+			</div>
+		</div>
+		<!--footer结束-->
+	</body>
+</html>

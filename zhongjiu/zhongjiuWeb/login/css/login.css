@@ -1,0 +1,36 @@
+body{background: #F2F2F2;}
+input{border: 0;}
+.layout{margin: 0 auto;width:900px;overflow: hidden;}
+.logo {height: 80px; overflow: hidden;padding: 10px 0;}
+.logo a{ padding: 10px 0; float:left;}
+.logo b{float:left;text-align:center;width: 111px; height: 46px;margin-left:20px;margin-top:10px;font: 22px/46px "微软雅黑";color: #333;border-left: 1px #E3E3E3 solid;}
+
+.loginTab{margin-top: 40px;padding: 4px;width: 890px;height: 402px;background: #E8E8E8;}
+.loginTab>div{background: #fff;border: 1px solid #E1E1E1;}
+.form{display: inline-block;margin-left: 50px;color:#98999A;width: 300px;padding:30px 48px 0 0;}
+.form input{width:282px ;height:40px;padding:3px 0 3px 36px;border: 1px solid #B8C1C8;font-size: 16px;color: #98999A;}
+.form input.focus{border-color: #7ABD54;}
+.form label{float:left;display:none;width: 319px;height:20px;border: 1px solid #FFBDBF;color: #E6393D;background: #FFEBEC;font: 12px/20px "微软雅黑";margin: 5px 0;}
+#loginUsn{background:url(../img/usn_bg.png) no-repeat;background-position:12px 15px;}
+#loginPsw{background:url(../img/psw_bg.png) no-repeat;background-position:12px 15px;}
+.loginPsw{margin-top: 10px;}
+.autologin{height: 37px;width: 320px;line-height: 37px;color: #98999A;}
+.autologin input{width: 20px;height: 20px;}
+
+.autologin a{float: right;color: #98999A;}
+.loginBtn{width: 321px;}
+#loginsubmit{width: 321px;height: 46px;border: 0;background:#F6342F;font:17px/46px "微软雅黑";color: #fff;border-radius: 2px;text-align: center;}
+.coagent{margin-top:85px;width: 321px;height: 82px;}
+.agent{float: left;width:169px;height: 82px;color:#6A7C86 ;}
+.agent a{display:inline-block;width: 32px;height:32px;margin-top: 15px;}
+.agent a+a{margin-left: 10px;}
+.qq{background: url(../img/qq1.png) no-repeat;}
+.qq2{background: url(../img/qq2.png) no-repeat;}
+.weibo{background: url(../img/weibo1.png ) no-repeat;}
+.weibo2{background: url(../img/weibo2.png) no-repeat;}
+.weixin{background: url(../img/weixin1.png) no-repeat;}
+.weixin2{background: url(../img/weixin2.png) no-repeat;}
+.free_regist{width:72px;height: 50px;float:right;text-align: center;}
+.free_regist a{color: #698FC2;}
+.footer { padding-bottom: 30px; text-align: center;margin-top: 40px;}
+.footer .copyright {margin: 20px 0; font: 12px/1 "微软雅黑"; color:#545454;}

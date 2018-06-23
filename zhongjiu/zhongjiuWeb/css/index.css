@@ -1,0 +1,115 @@
+.layout{width: 1190px;margin: 0 auto;overflow: hidden;}
+/*轮播图*/
+.lunBo {width: 100%;height:492px;z-index:5;position:absolute;left: 0%;top: 32px;border-top: 1px solid #D2041F;}
+.lunBo ul{height:491px;overflow:hidden;}
+.lunBo ul li{height:491px;display: none;}
+.lunBo ul li.show{display: block;}
+.lunBo ul li a{display: block;height:491px;}
+.tab_nav {position: absolute;bottom: 20px;left:50%;}
+.tab_nav a{display: inline-block;width: 14px;height: 14px;border-radius:7px ;background: #fff;}	
+.tab_nav a.cur{background: none;border: 2px solid #fff;border-radius:8px;}
+
+.small_banner{width:200px ;height:490px;position:absolute;right:40px;top:33px;z-index:6;}
+.small_banner a{display: block;width:200px;height: 243px;}
+.small_banner a.first_a{position:absolute;right:40px;top: 0;}
+.small_banner a.second_a{position:absolute;right:40px;top: 247px;}
+.small_banner a img{width:200px;height: 243px;}
+
+/*主体部分*/
+	/*小广告*/
+	.ad{margin-top:20px;}
+	.ad div{float:left;}
+	/*限时抢购*/ 
+	.LimitedTimeBuy{height: 465px;}
+	.LimitedTimeBuy .lxftime{font-size: 14px;}
+	.LimitedTimeBuy h5{float:left;width:1190px;height:72px;text-align: center;background: url(../img/title_limited.png) no-repeat center center;}
+	.LimitedTimeBuy ul li {float: left;width: 232px;height:342px;}
+	.LimitedTimeBuy ul li+li{margin-left: 7px;}
+	.LimitedTimeBuy ul li a.liml_img{border: #F9F9F9 1px solid;border-radius: 3px;display: block;width: 230px;height: 230px;}
+	.LimitedTimeBuy ul li a.liml_img img{width: 230px;height: 230px;}
+	.LimitedTimeBuy ul li div{height: 48px;color: black;font: normal 12px/48px "微软雅黑";font-style:normal ;}
+	.LimitedTimeBuy ul li span{font: 12px/1 "微软雅黑";}
+	.LimitedTimeBuy ul li span b{color:#F00F34;font-size: 18px;}
+	.LimitedTimeBuy ul li a.buy_now{display:block;color:#FFF;background:#FF2A3E;margin-top:25px;width: 228px;height: 22px;border:1px solid #FF2A3E;text-align: center;font:#FF2A3E 12px/1 "微软雅黑";}
+
+/*人气单品*/
+.popular-product{}
+.popular-product h3{font:bold 18px/62px "微软雅黑";color: #3D4048;}
+/*.popular-product div a{}这是一个动画效果要加*/
+.popular-product div a{display: inline-block;}
+.popular-product div a+a{margin-left:5px;margin-bottom: 10px;}
+.popular-product div a.MarginL0{margin-left:0;}
+
+/*精选商品*/
+.jingxuan,.baijiu,.hongjiu,.yangjiu{overflow: hidden;}
+.title{height:20px;border-bottom:1px solid #C9C9C9;padding:20px 0 10px 0;}
+.title h3{float:left;background: url(../img/title_bg.png) no-repeat left center;font:bold 16px/20px "微软雅黑";width:130px ;height:20px;text-align: center;}
+.title>ul{float: right;}
+.title>ul li{float:left;padding:0 20px;font:16px/1 "微软雅黑";}
+.title>ul li.li_active{color: #E3393C;}
+
+.content_main{padding-top: 4px;}
+.content_left{position:relative;float:left;width: 230px;height: 280px;padding-top: 170px;}
+.content_left>ul{margin-left:20px;}
+.content_left>ul li{float: left;width: 104px;height:20px}
+.content_left>ul li a{color: #292929;}
+.content_left>ul li a:hover{color: #E3393C;}
+.jingxuan .content_left{background:url(../img/main_bg1.jpg) no-repeat center center;}
+.baijiu .content_left{background: url(../img/main_bg2.jpg) no-repeat center center;}
+.hongjiu .content_left{background: url(../img/floor_ROne_20160921104707309411.jpg) no-repeat center center;}
+.yangjiu .content_left{background: url(../img/floor_ROne_20161008134147452597.jpg) no-repeat center center;}
+
+.content_left .tab{width:186px;height:140px;position:absolute;left:20px;top:280px;overflow: hidden;}
+.content_left .tab ul{width:380px;height:136px;position: absolute;left:0;top:0}
+.content_left .tab ul li{float:left;width:90px;height:65px;}
+.content_left .tab ul li+li{margin-left:5px;margin-bottom:5px;}
+
+.content_left .tab ul li a img{width:90px;height:65px;}
+/*左右按钮*/
+.content_left>a{color:#494E52;font-size:20px;}
+.content_left>a.left_btn{position: absolute;left:4px;top:75%;}
+.content_left>a.right_btn{position: absolute;left:215px;top:75%;}
+
+.content_main>ul{float: left;width: 950px;height: 450px;display: none;}
+.content_main>ul.showUl{display: block;}
+.content_main>ul li{float: left;width: 170px;height: 215px;padding:10px;padding-top:0;}
+.content_main>ul li img{width: 160px;height: 160px;}
+.content_main>ul li span{display: block;color: #F74034;font-size:13px;margin:5px 0;}
+.content_main>ul li a{color:#333;}
+
+.content_main>ul.hotSell div{float: left;margin: 0 8px;}
+.content_main>ul.hotSell li{float:left;margin-bottom: 9px;width: 230px;height: 220px;padding:0px;}
+.content_main>ul.hotSell li+li{margin-left:4px;}
+.content_main>ul.hotSell li img{width: 230px;height: 220px;}
+.content_imgs a{float: left;margin-top:10px;}
+.content_imgs a img{width: 230px;height: 220px;}
+.content_imgs a img.fixedWH{width: 470px;height: 220px;}
+.content_imgs a+a{margin-left: 10px;}
+
+/*品牌旗舰店*/
+.pinpai{margin: 30px 0;overflow: hidden;}
+.pinpai h3{width: 200px;height:45px;font: 18px/45px "微软雅黑";color: #333;}
+.pinpai a{float: left;}
+.pinpai>div{float: left;width: 630px;height: 347px;border: 1px #F3F3F3 solid;border-left:0 ;border-right: 0;
+position: relative;}
+.pinpai>div a{position: absolute;color: #fff;display: block;width: 26px;height: 38px;background: #D6D7D8;font:30px/38px "微软雅黑";text-align: center;}
+.pinpai>div a.tab_left_btn{left:7px;top:45%;}
+.pinpai>div a.tab_right_btn{left:597px;top:45%;}
+.pinpai>div div{width:504px;position: absolute;left:11%;top:17%;height:256px;overflow: hidden;}
+.pinpai>div div div{width: 5544px;position: absolute;left:0;top:0;}
+.pinpai>div div ul{width: 504px;height: 250px;float: left;}
+.pinpai>div div ul li{float:left;width: 100px;height: 50px;}
+.pinpai>div div ul li+li{border-left: 1px dashed #9A99A5;margin-bottom: 53px;}
+.pinpai>div div ul li a{width: 100px;height: 50px;}
+.pinpai>div div ul li a img{width: 100px;height: 50px;}
+
+
+/*楼层导航*/
+#LoutiNav{display:none;position:fixed;top: 25%;left: 20px;width:36px;}
+#LoutiNav ul li{position:relative;width:36px;height:30px;text-align:center;line-height:30px;font-size: 14px;
+cursor: pointer;border-bottom: 1px dotted #AAAAAA;color: #625352;background: #fff;}
+#LoutiNav ul li span{display: none;width:36px;height: 30px;position: absolute;top: 0;left: 0;color:red;font-size: 12px}
+#LoutiNav ul li span.active {display: block;color: white;background: #E3393C;}
+#LoutiNav ul li.hover span{display: block;color: white;background: #E3393C;}
+#LoutiNav ul li.hover span.active{display: block;color: white;background: #E3393C;}
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册页面</title>
+		<link rel="stylesheet" type="text/css" href="../common/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script src="../common/js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../common/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="layout">
+				<span class="favorite">
+					<i></i>
+					<a href="javascript:;">收藏商城</a>
+				</span>
+				<ul class="quick_list">
+				  <li class="loginbar">
+				    您好！欢迎来到商城！
+				    <a href="../login/login.html">[登录]</a>
+				    <a href="#">[免费注册]</a>
+				  </li>
+				</ul>
+			</div>
+		</div>
+		<div class="logo layout">
+		  <a href="../index.html"><img src="img/logo.png" alt="商城" height="60"></a>
+		  <b>欢迎注册</b>
+		</div>
+		<div class="w layout">
+			<span>我已经注册，现在就 <a href="../login/login.html">登录</a></span>
+		</div>
+		<div class="regiter_main">
+			<div class="user_tel">
+				<span><i>* </i>手机号码：</span>
+				<div>
+					<input type="text" id="usertel" value="" class="bg1"/>
+					<label id='tip'></label>
+				</div>
+			</div>
+			<div class="core">
+				<span><i>* </i>图形验证：</span>
+				<div>
+					<input type="text" id="core_img" value="" class="limi_size" maxlength="5"/>
+					<a href="javascript:;"></a>
+					<input type="hidden" name="" id="hide_code" value="" />
+					<label id='tip'></label>
+				</div>
+			</div>
+			<div class="password">
+				<span><i>* </i>请设置密码：</span>
+				<div>
+					<input type="password" id="psw" value="" class="bg2"/>
+					<label id='tip'></label>
+				</div>
+			</div>
+			<div class="PSW2">
+				<span><i>* </i>请确认密码：</span>
+				<div>
+					<input type="password" id="psw2" value="" class="bg2"/>
+					<label id='tip'></label>
+				</div>
+			</div>
+			<div class="tel_core">
+				<span><i>* </i>手机验证码：</span>
+				<div>
+					<input type="text" id="tel_core" value="" class="limi_size"/>
+					<a href="javascript:;">获取验证码</a>
+					<label id='tip'></label>
+				</div>
+			</div>
+			<div class="check">
+				<span></span>
+				<div>
+					<input type="checkbox" id="check_service" value="" />
+					<span>我已阅读并同意《<a href="javascript:;">用户注册协议</a>》</span>
+					<label id="tip"></label>
+				</div>
+			</div>
+			<div class="btn_reg">
+				<span></span>
+				<input type="button" id="registsubmit" value="立即注册" style = "cursor:pointer"/>
+			</div>
+		</div>
+		<div class="footer">
+			<p class="copyright">Copyright©2004-2015   中酒网  版权所有</p>
+		</div>
+	</body>
+</html>

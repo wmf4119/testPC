@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="../common/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+		<script src="../common/js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../common/js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/top.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cart.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部开始-->
+		<div class="header">
+			<div class="layout">
+				<!--头部左边-->
+				<div class="h_l">
+					<span>您好，欢迎来到<em style="color: #3E3A39;">中酒网！</em></span>
+					<a href="../index.html" style="color: #E3393C;">去首页</a>
+					<div id="loginInfo">
+						<span id="username"></span>
+						<a href="javascript:;" id="logout">[退出]</a>
+					</div>
+					<div id="goLogin">
+						<a href="../login/login.html">请登录</a>|<a href="../register/register.html">免费注册</a>
+					</div>
+				</div>
+				<!--头部右边-->
+				<ul class="h_r">
+					<li class="haveSubM">
+						<!--<span class="outline"></span>
+						<span class="blank"></span>-->
+						<a class="myZJ">我的中酒网</a>
+						<div id="dropdown-menu">
+						  <ol>
+							<li>
+						      <a href="">已买到的商品</a>
+						    </li>
+						    <li>
+						      <a href="">我关注的商品</a>
+						    </li>
+						    <li>
+						      <a href="">我关注的店铺</a>
+						    </li>
+						  </ol>
+						</div>
+					</li>
+					<li>
+						<a class="gouwuche">购物车<span class="cart_num">0</span>件</a>
+					</li>
+					<li class="haveSubM">
+						<a href="javascript:;">微信端</a>
+						<div id="dropdown-menu">
+						  <img src="../img/qrCode.png" height="90" width="90">
+						</div>
+					</li>
+					<li class="haveSubM">
+						<a href="javascript:;">APP</a>
+						<div id="dropdown-menu">
+						  <img src="../img/app.gif" height="90" width="90">
+						  <h3>扫描二维码</h3>
+						  <p> 下载手机客户端 </p>
+						</div>
+					</li>
+					<li class="haveSubM">
+					<a class="sellerCenter">卖家中心</a>
+					<div id="dropdown-menu">
+					  <ol>
+					    <li>
+					      <a href="javascript:;">商家入驻</a>
+					    </li>
+					    <li>
+					      <a href="javascript:;">已卖出商品</a>
+					    </li>
+					    <li>
+					      <a href="javascript:;">发布商品</a>
+					    </li>
+					    <li>
+					      <a href="javascript:;">管理商品</a>
+					    </li>
+					  </ol>
+					</div>
+					</li>
+					<li>
+						<a href="javascript:;">订购热线：400-798-9999</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--头部结束-->
+		<div class="contacter">
+			<img src="img/logo.png" alt="" class="logo_car"/>
+			<div style="background: url(img/step1.png) no-repeat right center;" class="step"></div>
+			<h2>我的购物车</h2>
+			<div class="myShoppingCar">
+				<div class="noLogined cart_com">
+					<p class="noPro">购物车暂时没有商品, <a href="../login/login.html">登录</a>后,将显示您之前加入的商品</p>
+					<p><a href="/index.html">去首页</a>挑选喜欢的商品</p>
+				</div>
+				<div class="noneCar cart_com">
+					<p class="noPro">购物车暂时没有商品</p>
+					<p><a href="/index.html">去首页</a>挑选喜欢的商品</p>
+				</div>
+				<div class="haveCar">
+					<table cellspacing="0">
+						<thead>
+							<td class="allSelected"><input type="checkbox" id="allGoods"/>全选</td>
+							<td class="car_goodDetail">商品</td>
+							<td class="car_goodPrice">商城价</td>
+							<td class="car_goodNum">数量</td>
+							<td class="car_pos">操作</td>
+						</thead>
+						<tfoot>
+							<td colspan="5">
+								<p>
+									<input type="checkbox" id="allGoods"/>全选&nbsp;
+									<button class="removeSele">删除</button>
+									<span><b class="totalNum">0</b>件商品</span>
+								</p>
+								<div>
+									<span >总计（不含运费）：<b class="totalPrice">￥0</b></span>
+									<input type="button" id="account" value="去结算" />
+								</div>
+							</td>	
+						</tfoot>
+						<tbody>
+							<tr class="shop" >
+								<td colspan="5"><input type="checkbox" id="allShop"/>中酒直营店</td>
+							</tr>
+						</tbody>
+						
+					</table>
+				</div>
+			</div>
+			<div class="shangpintuijian">
+				<h3>商品推荐</h3>
+				<ul>
+					<li>
+						<a href="javascript:;"><img src="img/1_220.png"/></a>
+						<a href="javascript:;">42°绵竹大曲 100ml</a>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/1_220(1).png"/></a>
+						<a href="javascript:;">中酒网无纺布购物袋</a>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/1_220(2).png"/></a>
+						<a href="javascript:;">中酒网精美台历</a>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/1_220(3).png"/></a>
+						<a href="javascript:;">彩色海马刀</a>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/1_220(4).png"/></a>
+						<a href="javascript:;">中酒网精美红包（一包）</a>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/1_220(5).png"/></a>
+						<a href="javascript:;">53°茅台飞天 500ml</a>
+					</li>
+					
+					<li>
+						<a href="javascript:;"><img src="img/1_220(6).png"/></a>
+						<a href="javascript:;">百加得冰锐朗姆预调酒...</a>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/1_220(7).png"/></a>
+						<a href="javascript:;">百加得冰锐朗姆预调酒...</a>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/1_220(8).png"/></a>
+						<a href="javascript:;">百加得冰锐朗姆预调酒...</a>
+					</li>
+					<li>
+						<a href="javascript:;"><img src="img/1_220(9).png"/></a>
+						<a href="javascript:;">百加得冰锐朗姆预调酒...</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
